@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CRUD de Usuarios</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <h1>CRUD de Usuarios</h1>
+
+  <div class="formulario">
+    <h3>Agregar / Editar Usuario</h3>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="text" id="identificacion" placeholder="Identificación">
+    <input type="text" id="direccion" placeholder="Dirección">
+    <button onclick="guardarUsuario()">Guardar Usuario</button>
+  </div>
+
+  <div class="tabla">
+    <h3>Lista de Usuarios</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Identificación</th>
+          <th>Dirección</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="listaUsuarios">
+        <!-- Usuarios aparecerán aquí -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
